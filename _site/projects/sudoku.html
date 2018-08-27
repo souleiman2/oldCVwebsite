@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Souleiman Ayoub</title>
+		<meta charset="utf-8">
+		<link rel = "stylesheet" href = "../style/base.css"></link>
+		<link rel="icon" type="image/png" href="../images/impotriangle.png">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+
+	<body data-spy="scroll" >
+	    <div class = "header">
+	     	<a href = ".."><img src = "../images/chess.jpg" alt = "Background Chess"></a>
+	     	<p>Souleiman Ayoub</p>
+	    </div>
+	    <nav class = "navbar">
+	    	<ul>
+	    		<li id = "li_project"><a href = "/projects">Projects</a></li>
+	    		<li id = "li_about"><a href = "/about">About</a></li>
+	    	</ul>
+	   	</nav>
+	   	<hr>
+	   	<div class = "container">
+	   		<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Sudoku generator</h1>
+  </header>
+
+  <div class="post-content">
+    <p><a href="https://github.com/souleiman2/Sudoku-Generator">Code</a></p>
+
+<p>This is a sudoku generator (not playable but it gives you the solution and the grid with numbers that are deleted).
+I will be creating a playable version soon.</p>
+
+<p>1  2  3<br />
+4  5  6<br />
+7  8  9</p>
+
+<p>-&gt; If you don’t feel like reading the code this is what is happening (I will refer to the 3x3 squares by numbers in the same order of the 
+square numbers above):</p>
+
+<p>Create the cross :</p>
+
+<p>1) Randomly fill the squares 2 and 4</p>
+
+<p>2) Create the squares 6 and 8 such as they work with the squares 2 and 4</p>
+
+<p>3) Create the square 5 thanks to these 4 squares (if their is a problem such as entanglement switch the position of 2 numbers 
+  (one of them is the one that is creating the problem) of 2 matrix that are opposite -&gt; (2 and 8) or (4 and 6))</p>
+
+<p><br />
+<img src="../images/sudoku/entanglement.png" alt="demo image" title="Entanglement" />
+<br /></p>
+
+<p>Create the corners:</p>
+
+<p>1) Create the squares 1, 3 and 7 thanks to the dependancies (the other squares that are in their lane)7</p>
+
+<p>2) Create the last square
+  -&gt; If it doesn’t work fix by switching only horizontally numbers if the matrix is vertical to the square and 
+vertically if the matrix is horizontal to the matrix (look at a picture called switching and yes the numbers 2 and 5 must be on the same 
+column so you make sure not to destroy the rest of the sudoku)</p>
+
+<p><br />
+<img src="../images/sudoku/switching.png" alt="demo image" title="Switching" />
+<br /></p>
+
+<p>-&gt; if the numbers that are creating the problem cannot be switch adequatly -&gt; restart the generation (since it’s fast it’s not much of an
+  issue)</p>
+
+<p>And there you go you have a sudoku generator 😃</p>
+
+
+  </div>
+
+</article>
+
+
+	   		
+
+	   	</div>
+      <div class="footer-bottom">
+      	<br><hr>
+        <div class="container">
+          <div class="row">
+            <div class="col-6" style = "text-align : right;">
+              <h4>I hope you had fun looking at the projects and that you learned a lot ❤️</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	</body>
+</html>

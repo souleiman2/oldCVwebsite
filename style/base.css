@@ -1,0 +1,103 @@
+body {
+	margin : 0px;
+	font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+hr{
+	height : 10px;
+	border : 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.header{
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.header img{
+	width: 100%;
+	height: 85vh;
+}
+
+.header p{
+	position:absolute;
+	bottom: 8px;
+	left : 5%;
+	font-size: 300%;
+}
+.navbar{
+	font-size: 28px;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top : 3vh;
+	margin-bottom: 3vh;
+}
+
+.navbar ul{
+	list-style-type: none;
+	margin: 0;
+	padding : 0;
+	overflow: hidden;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.navbar li{
+	text-align: center;
+	width : 30%;
+}
+
+#li_project{
+	float: left;
+}
+
+#li_about{
+	float: right;
+}
+.navbar li a{
+	display: block;
+	color: #666;
+	text-align: center;
+	padding : 14px 16px;
+	text-decoration: none;
+}
+.navbar li a:hover{
+	background-color : #ddd;
+	color : #222;
+}
+
+#myCarousel {
+	margin-left : 200px;
+	margin-right : 200px;
+}
+#images {
+	display : block;
+	margin-left : auto;
+	margin-right : auto;
+	width : 60%;
+}
+
+.container img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container p{
+	font-size: 16px;
+	line-height: 1.6;
+
+}
+
+.floater{
+	height: 200px;
+	float: left;
+	margin-right: 2% !important;
+}
+.carousel-inner p {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}

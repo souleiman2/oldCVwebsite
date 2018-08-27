@@ -1,0 +1,17 @@
+title: Souleiman Ayoub
+description: >- 
+        This is Souleiman Ayoub's website and it's purpose is
+        to enumerate the projects that I did so that it's
+        more interactif. Enjoy !
+
+baseurl: ""
+url: "https://souleimanayoub.github.io"
+github_username: souleiman2
+
+markdown : kramdown
+theme : minima
+
+collections:
+        projects:
+                output: true
+                permalink: /:collection/:name
